@@ -3,19 +3,19 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  // 我们将在这里配置 tailwindcss 模块
-  modules: ["@nuxtjs/tailwindcss"],
-
-  // 明确告诉模块我们的主样式文件在哪里
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-    configPath: "tailwind.config",
-  },
+  // 正确的配置方式是在 modules 数组中，
+  // 将模块和它的配置放在一个数组里
+  modules: [
+    [
+      "@nuxtjs/tailwindcss",
+      {
+        cssPath: "~/assets/css/tailwind.css",
+        configPath: "tailwind.config",
+      },
+    ],
+  ],
 
   build: {
     transpile: ["gsap"],
   },
-
-  // 注意：我们把之前的 css: [...] 这一行删掉了，
-  // 因为 tailwindcss 模块会帮我们处理
 });
