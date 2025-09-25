@@ -1,0 +1,18 @@
+{
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "C:/Users/jiuxi/Desktop/ying-recite/node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_4db8f949f325ce0344477987fa93e8eb/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "C:/Users/jiuxi/Desktop/ying-recite/node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_4db8f949f325ce0344477987fa93e8eb/node_modules/nuxt/dist/app/entry.js"
+  }
+}
